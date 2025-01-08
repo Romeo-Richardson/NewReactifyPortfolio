@@ -22,7 +22,7 @@ const Gallery: React.FC = () => {
     const updateDragConstraints = () => {
       setDragConstraints({
         right: 0,
-        left: -(images.length * 204) + window.innerWidth - 100,
+        left: -(images.length * 304) + window.innerWidth - 100,
       });
     };
 
@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
   }, [images.length]);
 
   return (
-    <section className="flex flex-col py-8my-2">
+    <section className="flex flex-col py-8 my-4">
       <div className="overflow-hidden">
         <motion.div
           ref={carouselRef}
@@ -57,7 +57,7 @@ const Gallery: React.FC = () => {
               style={{}}
               initial={false}
             >
-              <div className="min-w-[200px] h-[280px]">
+              <div className="min-w-[300px] h-[400px]">
                 <div className="relative w-full h-full">
                   <Image
                     src={image}
