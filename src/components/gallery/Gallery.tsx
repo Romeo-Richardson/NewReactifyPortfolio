@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
   }, [images.length]);
 
   return (
-    <section className="flex flex-col py-8 my-4">
+    <section className="flex flex-col justify-center h-screen">
       <div className="overflow-hidden">
         <motion.div
           ref={carouselRef}
