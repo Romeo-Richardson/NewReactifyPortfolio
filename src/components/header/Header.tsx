@@ -2,7 +2,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-between items-center w-full py-2 font-semibold">
+    <header className="flex justify-between items-center w-full py-2 uppercase">
       <span className="tracking-[-3%] uppercase text-lg">Reactify</span>
       <nav className="flex space-x-4 tracking-[-3%] text-sm ">
         <span>About</span>

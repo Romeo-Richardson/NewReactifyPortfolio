@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import { Courier_Prime } from "next/font/google";
+// import { Courier_Prime } from "next/font/google";
 import Header from "@/components/header/Header";
 import Lenis from "lenis";
 
-const courier = Courier_Prime({ subsets: ["latin"], weight: ["400"] });
+// const courier = Courier_Prime({ subsets: ["latin"], weight: ["400"] });
 
 interface LayoutProps {
   title: string;
@@ -48,9 +48,7 @@ const Layout: React.FC<LayoutProps> = ({ title, description, children }) => {
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content="/images/twitter-image.png" />
       </Head>
-      <main
-        className={`${courier.className} max-w-[1440px] mx-auto px-4 md:px-8`}
-      >
+      <main className=" max-w-[1340px] mx-auto px-4 md:px-8">
         <Header />
         {children}
       </main>

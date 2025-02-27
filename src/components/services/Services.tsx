@@ -3,48 +3,26 @@ import React from "react";
 const Services: React.FC = () => {
   return (
     <>
-      <section className="grid grid-cols-6 w-full pt-16">
-        <h2 className="text-2xl tracking-[-3%] uppercase py-4 col-span-1 font-semibold">
-          Services
+      <section className="h-screen w-full flex flex-col justify-between py-4">
+        <h2 className="text-[2rem] tracking-[-3%] uppercase">
+          Whether you’re a startup building a SaaS platform or launching a
+          custom web or mobile app, we’re here to bring your ideas to life.
+          <br /> <br /> Reimagine customer engagement with AI-powered chat
+          solutions. We design intelligent tools to help businesses adapt and
+          grow in a fast-changing world.
         </h2>
-        <div className="flex flex-col space-y-8 max-w-[70%] ml-auto col-span-5">
-          <div className="flex flex-col gap-2 ">
-            <p className="text-xl tracking-[-3%] uppercase py-4 font-semibold">
-              01 - Whether you’re a startup building a SaaS platform or
-              launching a custom web or mobile app, we’re here to bring your
-              ideas to life. From strategy to development, we create scalable
-              solutions that set you apart.Reimagine customer engagement with
-              AI-powered chat solutions.
-            </p>
-
-            <p className="text-xl tracking-[-3%] uppercase py-4 font-semibold">
-              02 - Whether you’re a startup building a SaaS platform or
-              launching a custom web or mobile app, we’re here to bring your
-              ideas to life. From strategy to development, we create scalable
-              solutions that set you apart. Reimagine customer engagement with
-              AI-powered chat solutions.
-            </p>
-
-            <p className="text-xl tracking-[-3%] uppercase py-4 font-semibold">
-              03 - Whether you’re a startup building a SaaS platform or
-              launching a custom web or mobile app, we’re here to bring your
-              ideas to life. From strategy to development, we create scalable
-              solutions that set you apart. Reimagine customer engagement with
-              AI-powered chat solutions.
-            </p>
-
-            <p className="text-xl tracking-[-3%] uppercase py-4 font-semibold">
-              04 - Whether you’re a startup building a SaaS platform or
-              launching a custom web or mobile app, we’re here to bring your
-              ideas to life. From strategy to development, we create scalable
-              solutions that set you apart. Reimagine customer engagement with
-              AI-powered chat solutions.
-            </p>
-          </div>
+        <div className="w-full flex justify-end gap-8 text-[2rem] tracking-[-3%]">
+          <ul className="columns-2 gap-8">
+            <h4 className="uppercase">Software Development</h4>
+            <li className="m-0 p-0 uppercase">Web Applications</li>
+            <li className="m-0 p-0 uppercase">Mobile Applications</li>
+            <li className="m-0 p-0 uppercase">Ai Chatss</li>
+            <li className="m-0 p-0 uppercase">E-commerce Store</li>
+          </ul>
         </div>
       </section>
 
-      <div className="w-full h-screen relative overflow-hidden my-16">
+      <section className="w-full h-screen relative overflow-hidden my-16">
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -55,7 +33,7 @@ const Services: React.FC = () => {
           <source src="test1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </section>
     </>
   );
 };
